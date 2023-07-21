@@ -1,0 +1,43 @@
+.nivel1{
+    
+    padding: 1%;
+    background-color: rgb(233, 231, 231);
+    border-radius: 20px;
+    margin: 2%;
+    text-align:initial;
+}
+
+.general{
+    padding: 20 00;
+    background-color: white
+}
+
+.mas{
+    width : 16px;
+    height: 16px;
+    border-radius: 20px;
+    clear: both;
+    
+}
+
+.llenar{
+    background-color: aqua;
+    clear: both;
+    display: none;
+    
+}
+
+.centrar{
+    padding: 2%;
+    display: flex;
+    align-items: center;
+}   
+
+.h3{
+    float: left;
+    
+}
+
+.espacio{
+    padding-bottom: 10px;
+}

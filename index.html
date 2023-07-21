@@ -4,86 +4,125 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet"  href="estilos.css">
+    
 </head>
 <body>
-    <script src="codigo.js"></script>
     
-    <h2>Datos Personales</h2>
-        <label>CUIL</label>
-        <input></input>
-        <label>DNI</label>
-        <input type = "number"></input>
-        <label>Nombres</label>
-        <input size = "30"></input>
-        <label>Apellidos</label>
-        <input size = "30"></input>
-        <br><br>
-        <label>Fecha de Nacimeinto</label>
-        <input type = "date"></input>
-        <label>Lugar de Nacimeinto</label>
-        <input></input>
-        <label>Nacionalidad</label>
-        <input></input>
-        <label>Estado Civil</label>
-        <select name="select">
-            <option value="value1">Seleccione</option>
-            <option value="value1">Soltero</option>
-            <option value="value2">Casado</option>
-            <option value="value3">Seperado</option>
-            <option value="value3">Divorciado</option>
-            <option value="value3">En Pareja</option>
-        </select>
+       
+    <div class = "general">
+        <h1>SOLICITUD DE EMPLEO</h1>
+        <div class = "nivel1" id = "div1">
+            <h2>Datos Personales</h2>
+                <label>CUIL</label>
+                <input></input>
+                <label>DNI</label>
+                <input type = "number"></input>
+                <label>Nombres</label>
+                <input size = "30"></input>
+                <label>Apellidos</label>
+                <input size = "30"></input>
+                <br><br>
+                <label>Fecha de Nacimeinto</label>
+                <input type = "date"></input>
+                <label>Lugar de Nacimeinto</label>
+                <input></input>
+                <label>Nacionalidad</label>
+                <input></input>
+                <label>Estado Civil</label>
+                <select name="select">
+                    <option value="value1">Seleccione</option>
+                    <option value="value1">Soltero</option>
+                    <option value="value2">Casado</option>
+                    <option value="value3">Seperado</option>
+                    <option value="value3">Divorciado</option>
+                    <option value="value3">En Pareja</option>
+                </select>
+        </div> 
+        <div class = "nivel1" id = "div2"> 
+            <h2>Datos de Contacto</h2>
+                <label>Telefono Particular</label>
+                <input type = "number"></imput>
+                <label>Correo</label>
+                <input type = "email"></imput>
+                <label>Domicilio</label>
+                <input></input>
+                <label>Localidad</label>
+                <input></input><br><br>
+                <label>Código Postal</label>
+                <input size = "10"></input>
+                <label>Entre Calles</label>
+                <input></input>
+                <label>y</label>
+                <label>Calle</label>
+                <input></input>
+        </div>
+        
+        <div class = "nivel1" id = "div3">
+            <h2>Datos Profesionales</h2>
+            <div class = "espacio">
+                <label>Profesión</label>
+                <input id = "profesión"></input><br>
+            </div>
+            <div class = "espacio">
+                <label>Tus Datos</label>
+                <select id = "selecition" name="Estudios" onchange ="mostrar()">
+                    <option value="value1">Seleccionar</option>
+                    <option value="value2">Linkedin</option>
+                    <option value="value3">Cargar</option>        
+                </select>
+            </div>
+            <div id = "url" class = "llenar">
+                <label>URL Linkedin</label>
+                <input></input><br>
+            </div>
 
-    <h2>Datos de Contacto</h2>
-        <label>Telefono Particular</label>
-        <input type = "number"></imput>
-        <label>Correo</label>
-        <input type = "email"></imput>
-        <label>Domicilio</label>
-        <input></input>
-        <label>Localidad</label>
-        <input></input>
-        <label>Código Postal</label>
-        <input size = "10"></input>
-        <br><br>
-        <label>Entre Calles</label>
-        <input></input>
-        <label>y</label>
-        <label>Calle</label>
-        <input></input>
-
-    <h2>Estudios Realizados</h2>
-    <div>
-        <select name="Estudios">
-            <option value="value1">Seleccione</option>
-            <option value="value2">Primario</option>
-            <option value="value3">Secundario</option>
-            <option value="value4">Terciario / Universitario</option>            
-        </select>
-        <label>Instituto</label>
-        <input></input>
-        <label>Titulo Obtenido</label>
-        <input></input>
-        <label>Terminado</label>
-        <select name="Terminado">
-            <option value="value1">Seleccione</option>
-            <option value="value2">Si</option>
-            <option value="value3">No</option>
-        </select>
-        <label>Año</label>
-        <input></input>
+            <div id = "estReal" class = "llenar" id = div3.1>
+                <div class = "h3"><h3>Estudios Realizados</h3></div>
+                <div class = "centrar"><img src="img/mas.jpg" class = "mas" alt=""></div>
+                    <select name="Estudios">
+                        <option value="value1">Seleccione</option>
+                        <option value="value2">Primario</option>
+                        <option value="value3">Secundario</option>
+                        <option value="value4">Terciario / Universitario</option>            
+                    </select>
+                    <label>Instituto</label>
+                    <input></input>
+                    <label>Titulo Obtenido</label>
+                    <input></input>
+                    <label>Situación</label>
+                    <select name="Terminado">
+                        <option value="value1">Seleccione</option>
+                        <option value="value2">Terminado</option>
+                        <option value="value3">En curso</option>
+                        <option value="value4">Suspendido</option>
+                    </select>
+                    <label>Año</label>
+                    <input></input>
+            
+        
+                
+                <div class = "h3"><h3>Estudios o Cursos Especiales</h3></div>
+                <div class = "centrar"><img src="img/mas.jpg" class = "mas" alt=""></div>
+                <div class = "llenar" id = "div4.1">
+                    <Label>Titulo Obtenido</Label>
+                    <input></input>
+                    <label>Institución</label>
+                    <input></input>
+                    <Label>Duración</Label>
+                    <input></input>
+                    <label>Situación</label>
+                    <select name="Terminado">
+                        <option value="value1">Seleccione</option>
+                        <option value="value2">Terminado</option>
+                        <option value="value3">En curso</option>
+                        <option value="value4">Suspendido</option>
+                    </select>
+                </div>
+            </div>
+        </div>
     </div>
-
-    <h2>Estudios o Cursos Especiales</h2>
-    <div>
-        <Label>Titulo Obtenido</Label>
-        <input></input>
-        <label>Institución</label>
-        <input></input>
-        <Label>Duración</Label>
-        <input></input>
-        <Label>Terminado</Label>
-        <input></input>
-    </div>
+        
+    <script src="codigo.js"></script>
 </body>
 </html>
